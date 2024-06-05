@@ -3,7 +3,7 @@
 Une fois que l'application remarche :
 
 - Permettre de supprimer un article.
-- Permettre de modifier un article dans le tableau.
+- Permettre de modifier un article dans le tableau en partant du code commenté.
 - Calculer le montant total des articles et l'afficher.
 - Recharger les articles sauvés lorsque le composant est chargé.
-- Afficher les prix sous format monétaire.
+- Afficher le prix total sous format monétaire.
