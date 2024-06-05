@@ -19,13 +19,17 @@
                 @for (article of articles; track $index) {
                     <tr>
                         <td>
-                            <input [(ngModel)]="article.name"
-                                   class="form-control">
+                            {{article.name}}
+
+                            <!--<input [(ngModel)]="article.name"
+                                   class="form-control">-->
                         </td>
                         <td>
-                            <input [(ngModel)]="article.price"
+                            {{article.price}}
+
+                            <!--<input [(ngModel)]="article.price"
                                    type="number"
-                                   class="form-control">
+                                   class="form-control">-->
                         </td>
                         <td>
                             <button class="btn btn-sm btn-danger">Supprimer</button>
