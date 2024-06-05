@@ -33,7 +33,7 @@ export class AppComponent {
 
         this.articles.push({
             name: name,
-            price: parseFloat(price)
+            price: parseFloat(price),
         });
     }
 
