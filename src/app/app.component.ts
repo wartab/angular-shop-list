@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import {FormsModule} from "@angular/forms";
 
 interface Article {
     name: string;
@@ -8,7 +9,10 @@ interface Article {
 @Component({
     selector: "app-root",
     templateUrl: "./app.component.html",
-    styleUrl: "./app.component.scss",
+    imports: [
+        FormsModule,
+    ],
+    styleUrl: "./app.component.scss"
 })
 export class AppComponent {
     public articles: Article[] = [
