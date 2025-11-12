@@ -4,9 +4,10 @@
 
     </mon-beau-titre>
 
-    <button class="btn btn-success" (click)="createArticle($event)">Nouvel article</button>
-    <button class="btn btn-primary" (click)="saveArticles($event)">Sauver</button>
-    <form>
+    <form #form="ngForm">
+        <button class="btn btn-success" (click)="createArticle($event)">Nouvel article</button>
+        <button class="btn btn-primary" (click)="saveArticles($event)" [disabled]="form.invalid">Sauver</button>
+
         <table class="table table-striped">
             <thead>
             <tr>
@@ -22,12 +23,14 @@
                             {{article.name}}
 
                             <!--<input [(ngModel)]="article.name"
+                                   required
                                    class="form-control">-->
                         </td>
                         <td>
                             {{article.price}}
 
                             <!--<input [(ngModel)]="article.price"
+                                   required
                                    type="number"
                                    class="form-control">-->
                         </td>
